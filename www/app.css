@@ -1,0 +1,35 @@
+
+#my_tabs a {
+  color: #001b8e;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  background-image: url('coffee-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 28%; 
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  color: white;  
+
+}
+
+#form .panel-heading {
+  background-color: #001b8e;
+  color: white;
+}
+
+#signup {
+  background-color: #001b8e;
+  color: white;
+}
+
+h2 {
+  color: #001b8e;
+}
