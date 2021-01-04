@@ -1,7 +1,7 @@
-"","meeting","id","first_name","last_name","email","department","submit_time",".id","V1"
-"1",1,1,"Michelle","Sexton","michelle.sexton@thomasmiller.com","Senior Management","Wed Dec  2 13:35:39 2020",3,"Theodoros.Karageorgos@thomasmiller.com"
-"2",1,2,"Theo","Karageorgos","Theodoros.Karageorgos@thomasmiller.com","Hellas","Wed Dec  2 10:30:16 2020",1,"michelle.sexton@thomasmiller.com"
-"3",2,3,"Tom","Holme","THOMAS.HOLME@THOMASMILLER.COM","Underwriting","Wed Dec  2 11:01:22 2020",2,"alan.mackinnon@thomasmiller.com"
-"4",2,4,"Alan","Mackinnon","alan.mackinnon@thomasmiller.com","Senior Management","Wed Dec  2 19:38:44 2020",5,"THOMAS.HOLME@THOMASMILLER.COM"
-"5",3,5,"Patrick","Green","patrick.green@thomasmiller.com","You Forgot Mine!","Wed Dec  2 14:15:17 2020",4,"nigel.desilva@thomasmiller.com"
-"6",3,6,"Nigel","De Silva","nigel.desilva@thomasmiller.com","Senior Management","Thu Dec  3 13:47:26 2020",6,"patrick.green@thomasmiller.com"
+,meeting,first_name,last_name,department,email,V1
+1,1,Michelle,Sexton,Senior Management,michelle.sexton@thomasmiller.com,Theodoros.Karageorgos@thomasmiller.com
+2,1,Theo,Karageorgos,Hellas,Theodoros.Karageorgos@thomasmiller.com,michelle.sexton@thomasmiller.com
+3,2,Tom,Holme,Underwriting,THOMAS.HOLME@THOMASMILLER.COM,alan.mackinnon@thomasmiller.com
+4,2,Alan,Mackinnon,Senior Management,alan.mackinnon@thomasmiller.com,THOMAS.HOLME@THOMASMILLER.COM
+5,3,Patrick,Green,You Forgot Mine!,patrick.green@thomasmiller.com,nigel.desilva@thomasmiller.com
+6,3,Nigel,De Silva,Senior Management,nigel.desilva@thomasmiller.com,patrick.green@thomasmiller.com

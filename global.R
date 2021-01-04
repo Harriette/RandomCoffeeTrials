@@ -128,7 +128,7 @@ match_people <- function(people, meeting_size=2, avoid_same=NULL) {
       # If there are people remaining on the list...
       
       # Find a pool of suitable matches - those in different departments
-      pool <- people[people[ , avoid_same] != meetings[[m]][[1]][ , avoid_same], ] 
+      pool <- people[unlist(people[ , ..avoid_same]) != unlist(meetings[[m]][[1]][ , ..avoid_same]), ] 
       
       if (nrow(pool) > 0) {
         # Pick a random match from the Pool
@@ -159,9 +159,9 @@ match_people <- function(people, meeting_size=2, avoid_same=NULL) {
   last_meeting <- out[out$meeting == max(out$meeting), ]
   if(nrow(last_meeting)==1) {
     # Find a meeting with fewest colleagues
-    best_meeting <- tapply(out[, avoid_same], 
+    best_meeting <- tapply(unlist(out[, ..avoid_same]), 
                            out$meeting, 
-                           function(x) length(x[x==last_meeting[ , avoid_same]]))
+                           function(x) length(x[x==unlist(last_meeting[ , ..avoid_same])]))
     best_meeting <- as.integer( names(sort(best_meeting)[1]) )
     
     # Apply that meeting to the output
