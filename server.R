@@ -135,6 +135,7 @@ server <- function(input, output, session) {
         extensions = "Buttons",
         options = list(
           scrollX = TRUE,
+          pageLength = -1,
           dom = 'Bftip',
           buttons = "excel"
         )
