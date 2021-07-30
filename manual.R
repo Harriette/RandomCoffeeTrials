@@ -13,3 +13,5 @@ saveRDS(object = data,
         file = file.path(saveDir, dataFile))
 
 match_people(data, avoid_same = "department")
+
+fwrite()

@@ -64,7 +64,7 @@ server <- function(input, output, session) {
     }
   })
   
-  output$manage_participants <- renderDT({
+  output$manage_participants <- renderDT(server = FALSE, {
     req(manage_participants_prep())
     out <- manage_participants_prep()
     
@@ -79,7 +79,7 @@ server <- function(input, output, session) {
       extensions = c("Buttons"),
       options = list(
         scrollX = TRUE,
-        dom = 'Bftip',
+        dom = 'Blftip',
         buttons = list(
           list(
             extend = "excel",
@@ -121,7 +121,7 @@ server <- function(input, output, session) {
     
     out <- match_people(out, avoid_same = "department")
     
-    output$meetings_table <- renderDT({
+    output$meetings_table <- renderDT(server = FALSE, {
       
       # Number of participants
       n <- length(grep("V", names(out)))
@@ -136,7 +136,7 @@ server <- function(input, output, session) {
         options = list(
           scrollX = TRUE,
           pageLength = -1,
-          dom = 'Bftip',
+          dom = 'Blftip',
           buttons = "excel"
         )
       )
